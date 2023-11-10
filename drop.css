@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'poppins';
+}
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 15px;
+    /* width: 180px; */
+    position: relative;
+
+}
+header ul li a{
+    color: #080707fa;
+    transition: .6s;
+}
+header ul li a:hover{
+    color: blue;
+}
+header #drop1,header #drop2{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #fff;
+    width: 130px;
+    border-radius: 5px;
+}
+header #drop2{
+    top: 0%;
+    left: 104%;
+}
+header #drop1 li{
+    padding: 10px 6px;
+    margin: 10px 5px;
+}
+#drop1 , #drop2{
+    display: none;
+}
+/* #service-drop:hover #drop1{
+    display: block;
+} */
+/* #digi-drop:hover #drop2{
+    display: block;
+} */
+.show{
+    display: block;
+}
+.main{
+    height: 90vh;
+    width: 100%;
+    background: url(/pexels-vanessa-loring-5966431.jpg);
+    background-position: top;
+    background-size: cover;
+}
+header .fa-bars{
+    padding: 12px;
+    border: 1px solid blue;
+    color: white;
+    background-color: blue;
+    border-radius: 3px;
+    display: none;
+}
+
+@media screen and (max-width:992px) {
+    header .fa-bars{
+        display: block;
+    }
+    header{
+        position: relative;
+    }
+    ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        transition: .6s;
+        display: none;
+    }
+    header ul li{
+        display: block;
+        margin: 18px 0;
+        padding: 10px 8%;
+    }
+    header #drop1{
+        top: 0;
+        left: 100px;
+    }
+    header #drop2{
+        left: 100%;
+        top: 0%;
+    }
+    .show{
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px){
+    header #drop1 ,header #drop2{
+        top: 80%;
+        left: 100px;
+    }
+    header #drop2{
+        left: 36%;
+        top: 115%;
+    }
+}
