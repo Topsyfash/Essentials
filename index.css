@@ -512,7 +512,7 @@ nav .link-container .dropdown{
         padding: 20px;
         background-color: rgb(182, 55, 55);
         line-height: 3;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         text-align: center;
         margin: auto;
@@ -589,6 +589,10 @@ nav .link-container .dropdown{
     }
     .payments .methods{
         gap: 10px;
+    }
+    .search {
+        width: 70%;
+        margin:0 50px;
     }
 }
 
